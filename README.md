@@ -81,6 +81,7 @@ The browser api will provide all the event callbacks assignment using a configur
 * `wsUrl` variable to set the wsUrl of the ws server
 * `cookieName` variable to set the name of the cookie to be stored in the browser for player reconnection scenario
 * `cookieExpirationTimeInHours` variable to set the duration of the cookie to be stored in the browser for player reconnection scenario
+* `enablePersistentSession` if true, store the player session in the coockies this is required to enable the rejoin when player is in offline state
 
 ### Browser Side API Usage
 ```
