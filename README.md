@@ -1,4 +1,4 @@
-# Mborch Framework (POC)
+# Mborch
 
 Mborch (Multiplayer Browser Orchestrator) gives you a server and browser side API to easily implement multiplayer web games with peer to peer communication between players.
 
@@ -9,9 +9,9 @@ Mborch (Multiplayer Browser Orchestrator) gives you a server and browser side AP
 
 ## Server Side API
 
-### Server Side API Feature
+### Server Side API Features
 
-The main class (Mborch) on instantiation will start a ws server publishing the below services:
+The main class (Mborch) on instantiation will start a ws server publishing the below services trough the ws server:
 
 * `create a new room` any player can create a room if the number of rooms in the server has not reached the limit
 * `join to room` any player can join to a specific room if it has the name/password and the number of players in the room has not reached the limit
@@ -20,6 +20,10 @@ The main class (Mborch) on instantiation will start a ws server publishing the b
 * (TODO) `kick player` ability to kick a determine player from a room by other players votation
 * No room clean up required, rooms are deleted once the last player on it leaves
 * For players and rooms names the restriction is given by the regex /[azA-Z0-9]{4,10}/
+
+The Mborch class also provide the below public methods
+
+* `writeClient(browserifyInput, browserifyOutput, mainClass)` where main class is optional in case you don't want to publish a standAlone class 
 
 ### Server Side API Configuration
 
@@ -49,7 +53,7 @@ On instantiation, the `mborch` object will start the ws server and it will write
 
 ## Browser Side API
 
-### Browser Side API Feature
+### Browser Side API Features
 
 The browser side library will offer a layer of abstraction to consume the ws server. The mail class again will be Mborch but this time publishing the below methods.
 
