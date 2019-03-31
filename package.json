@@ -1,6 +1,6 @@
 {
   "name": "mborch",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "framework for online P2P browser games",
   "main": "index.js",
   "directories": {
