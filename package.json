@@ -1,0 +1,36 @@
+{
+  "name": "mborch",
+  "version": "1.0.0",
+  "description": "framework for online P2P browser games",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "browserify": "^16.2.3",
+    "ws": "^6.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D3adlock/mboarch.git"
+  },
+  "keywords": [
+    "browser game",
+    "multiplayer browser game",
+    "peer to peer",
+    "P2P",
+    "mborch",
+    "d3adlock",
+    "multiplayer"
+  ],
+  "author": "Claudio Gallardo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/D3adlock/mboarch/issues"
+  },
+  "homepage": "https://github.com/D3adlock/mboarch#readme"
+}
